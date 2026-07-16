@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0a0a0f;
+  color: #e0e0ff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(10, 10, 15, 0.98);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.logo-circle {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.menu-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 5% 3rem;
+  background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a0f 70%);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  background: #1f1f2e;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  padding: 1.1rem 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.05rem;
+}
+
+.search-btn {
+  padding: 0 2.2rem;
+  background: #6366f1;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Trending */
+.trending {
+  margin: 1.5rem 0;
+}
+
+.trending p {
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
+}
+
+.trending-tags span {
+  background: #1f1f2e;
+  padding: 0.6rem 1.2rem;
+  margin: 0.4rem;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+/* CTA Buttons */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: white;
+  border: none;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #6366f1;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Sectors */
+.sectors {
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.sectors h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #161625;
+  padding: 1.8rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #1f1f2e;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Ready Section */
+.ready {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.ready-box {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+}
+
+.ready-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #0f0f1a;
+  padding: 3rem 5% 2rem;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+}
+
+.footer-columns ul {
+  list-style: none;
+}
+
+.footer-columns h4 {
+  margin-bottom: 1rem;
+  color: #a5b4fc;
+}
+
+.bottom-bar {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  opacity: 0.7;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  height: 100%;
+  background: #0a0a0f;
+  transition: 0.4s;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  float: right;
+  margin-bottom: 2rem;
+}
+
+.mobile-menu ul li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
