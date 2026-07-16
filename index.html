@@ -1,117 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>LexpanelSuite</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LexpanelSuite</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-circle">L</span>
+        <span>LexpanelSuite</span>
+      </div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
 
-<header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>The Ultimate Panel Suite<br>for Digital Assets</h1>
+    <p class="subtitle">Trusted by thousands of businesses worldwide.</p>
 
-<div class="logo">
+    <div class="search-container">
+      <input type="text" placeholder="Search products..." class="search-input" />
+      <button class="search-btn">Search</button>
+    </div>
 
-<div class="logo-circle">
-L
-</div>
+    <div class="trending">
+      <p>Trending:</p>
+      <div class="trending-tags">
+        <span>WhatsApp</span>
+        <span>Telegram Premium</span>
+        <span>US Number</span>
+        <span>Instagram Likes</span>
+      </div>
+    </div>
 
-<h2>LexpanelSuite</h2>
+    <div class="cta">
+      <button class="btn-primary" id="getStartedBtn">Get Started Free</button>
+      <button class="btn-secondary">Explore Services</button>
+    </div>
+  </section>
 
-</div>
+  <!-- Explore Market Sectors -->
+  <section class="sectors">
+    <h2>Explore Market Sectors</h2>
+    <p class="section-desc">Everything you need to scale your digital presence.<br>Browse our comprehensive catalog of verified assets.</p>
 
-<div class="menu-btn">
+    <div class="grid">
+      <div class="card">
+        <div class="service-icon social"></div>
+        <h3>Social Accounts</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon numbers"></div>
+        <h3>Virtual Numbers</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon smm"></div>
+        <h3>SMM Orders</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon logs"></div>
+        <h3>Software Logs</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon proxy"></div>
+        <h3>Proxy</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon esim"></div>
+        <h3>E-SIM</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon streaming"></div>
+        <h3>Streaming</h3>
+        <p>Browse Collection</p>
+      </div>
+      <div class="card">
+        <div class="service-icon vpn"></div>
+        <h3>VPN & Security</h3>
+        <p>Browse Collection</p>
+      </div>
+    </div>
+  </section>
 
-<i class="fa-solid fa-bars"></i>
+  <!-- Ready to Get Started -->
+  <section class="ready">
+    <div class="ready-box">
+      <h2>Ready to get started?</h2>
+      <p>Join thousands of users leveraging our platform for secure verification and growth.</p>
+      <button class="btn-primary" id="readyBtn">Get Started →</button>
+    </div>
+  </section>
 
-</div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo">LexpanelSuite</div>
+      <p>Your trusted platform for virtual numbers and social media marketing services.</p>
 
-</header>
+      <div class="footer-columns">
+        <div>
+          <h4>SERVICES</h4>
+          <ul>
+            <li>Virtual Numbers</li>
+            <li>SMM Services</li>
+            <li>Social Accounts</li>
+          </ul>
+        </div>
+        <div>
+          <h4>SUPPORT</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Documentation</li>
+            <li>Status Page</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h4>LEGAL</h4>
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      © 2026 LexpanelSuite. All rights reserved.
+    </div>
+  </footer>
 
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu">✕</button>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
 
-<section class="hero">
-
-<div class="background-lines"></div>
-
-<h1>
-
-The Ultimate Panel Suite
-<br>
-for Digital Assets
-
-</h1>
-
-<p>
-
-Trusted by thousands of businesses worldwide.
-
-</p>
-
-<div class="search-box">
-
-<input
-type="text"
-placeholder="Search products...">
-
-<button>
-
-Search
-
-</button>
-
-</div>
-
-
-<h4 class="trend-title">
-
-Trending:
-
-</h4>
-
-<div class="trending">
-
-<span>WhatsApp</span>
-
-<span>Telegram Premium</span>
-
-<span>US Number</span>
-
-<span>Instagram Likes</span>
-
-</div>
-
-
-<div class="hero-buttons">
-
-<a href="#" class="start">
-
-Get Started Free
-
-</a>
-
-<a href="#" class="explore">
-
-Explore Services
-
-</a>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
